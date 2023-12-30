@@ -1,0 +1,76 @@
+#!/bin/bash
+
+set -e
+
+DIR="/home/sono/vidistar/vidistar/update/dbmaintain/"
+VIDISTAR="/home/sono/vidistar/vidistar"
+PSQL_DRV=($VIDISTAR/modules/org/postgresql/main/postgresql-*.jar)
+tempdb_CFG="CI_scripts/TemplateDB_conf"
+file=($VIDISTAR/standalone/deployments/vidistar-ear.ear.deployed)
+counter=0
+export JDBC_DRIVER=$PSQL_DRV
+export JAVA_HOME=/home/sono/java
+echo $file
+
+echo "INFO: Stopping vidistar service"
+sudo service vidistar stop
+sleep 10s
+svc_stop="`ps -ef | grep java | grep vidistar.xml | wc -l`"
+if [ $svc_stop == 0 ]
+then
+        echo "INFO: Service stopped successfully"
+else
+        echo "INFO: Error in stopping vidistar service"
+        exit 1;
+fi
+
+echo "INFO: Vidistar upgrade"
+vidistar-bootstrap --no-backup --skip-analytics
+echo $?
+
+echo "INFO: Running DBmaintain Scripts on template_pacsdb"
+echo "dbMaintainer.executedScriptsTableName=dbmaintain_pre_scripts" >> "$tempdb_CFG"
+echo "Executing preprocessing phase $tempdb_CFG"
+"$DIR/dbmaintain.sh" updateDatabase "$DIR/pre-scripts" -config "$tempdb_CFG"
+sed -i  "s/dbMaintainer.executedScriptsTableName=dbmaintain_pre_scripts/ /" "$tempdb_CFG"
+echo "Processing database changes $tempdb_CFG"
+"$DIR/dbmaintain.sh" updateDatabase "$DIR/scripts" -config  "$tempdb_CFG"
+
+echo "INFO: Drop pacsdb"
+psql postgres -c "SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = 'pacsdb' AND pid <> pg_backend_pid();"
+psql postgres -c "Drop database pacsdb"
+psql postgres -c "\l"
+psql postgres -c "SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = 'template_pacsdb' AND pid <> pg_backend_pid();"
+psql postgres -c "CREATE DATABASE pacsdb WITH TEMPLATE template_pacsdb OWNER sono;"
+psql pacsdb -c "\l"
+echo "INFO: Database restored successfully"
+
+echo "INFO: Restoring Studies"
+rsync -parv --delete  ~/Automation_study_bkp/archive/ /archive/archive/
+
+echo "INFO: Starting vidistar service"
+sudo service vidistar start
+sleep 10s
+svc_start="`ps -ef | grep java | grep vidistar.xml | wc -l`"
+if [ $svc_start -ge 1 ]
+then
+        echo "INFO: Service started successfully"
+else
+        echo "INFO: Error in starting vidistar service"
+        exit 1;
+fi
+
+until [ ! $counter -lt 4 ]
+do
+
+        if [ -e $file ]
+        then
+                echo -e "Success: Vidistar application deployed successfully"
+                exit 0;
+        fi
+   sleep 1m
+   ((counter=counter + 1))
+done
+echo -e "Failed to deploy vidistar application"
+exit 1;
+

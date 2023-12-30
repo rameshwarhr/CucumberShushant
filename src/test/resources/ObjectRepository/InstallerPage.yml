@@ -1,0 +1,2 @@
+viewerInstallationDialogBox_Name: "Viewer Downloader"
+vidistarTaskbarIcon_Xpath: "//*[contains(@Name,'ViewerDownloader.exe - 1 running window')]"

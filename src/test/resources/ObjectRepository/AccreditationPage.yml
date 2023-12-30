@@ -1,0 +1,5 @@
+documentViewerPanel_Xpath: "//*[@eventproxy='isc_DocumentPanel_0']"
+documentTreeSection_Xpath: "//*[@eventproxy='isc_SectionStackSection_25']/table"
+accreditationSettings_Xpath: "//*[@eventproxy='isc_SectionStackSection_24']"
+documentList_Xpath: "//div[contains(@eventproxy,'DocumentTreeGrid')]//td[contains(@id,'valueCell')]"
+documentNameOnViewPanel_Xpath: "//*[@eventproxy='isc_SectionStackSection_21']/table/tbody/tr/td/div"

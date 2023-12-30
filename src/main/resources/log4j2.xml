@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="basePath">./Logs</Property>
+	</Properties>
+
+	<Appenders>
+		<RollingFile name="File"
+			fileName="${basePath}/VidistarTestRun.log"
+			filePattern="${basePath}/VidistarTestRun-%d{yyyy-MM-dd}.log"
+			append="false" immediateFlush="false">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS}  %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="5 MB" />
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>
+    
+    

@@ -1,0 +1,6 @@
+objectFilterViewFrame_Name: ObjectFilterView
+adminControlPageHeader_Xpath: "//table//tbody//tr//td//h2[text()='Object Name Filter']"
+sonovisionArchiveFilterLink_Xpath: "//*[text()='sonovision.archive']"
+globalConfigurationServiceLink_Xpath: "//a[contains(@href,'GlobalConfigurationService')]"
+sessionTimeoutTextbox_Xpath: "//*[text()='SessionTimeout']/parent::tr//input"
+applyChangesButton_Xpath: "//*[@value='Apply Changes']"

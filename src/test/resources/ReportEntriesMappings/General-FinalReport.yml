@@ -1,0 +1,113 @@
+Patient profile data:
+ Patient profile data:
+  Patient name: ""
+  Examination date: ""
+  Patient type: "Outpatient;Inpatient"
+  Age: ""
+  Sex: ""
+  DOB: ""
+  History: "Cardiac History. Diabetes. Family History. Hypertension. Hyperlipidemia. Kidney Disease. Pulmonary embolism. Smoking. Former smoker. Stroke. TIA. DVT. Patient seen by Physician at VHA"
+  Cardiac Rhythm: "Normal Sinus Rhythm;Atrial Fibrillation;Atrial Flutter;AV Block;Junctional;Pacemaker - A pace;Pacemaker - V pace;Pacemaker - AV pace;Pacemaker - Bi-V pace;Pacemaker - Unknown pace;PACs;PVCs;Sinus Bradycardia;Sinus Tachycardia;SVT;Ventricular arrhythmia"  
+  Equipment: ""
+  Chart: ""
+  Referring physician: ""
+Study Description:
+ Favorites:
+  Study Description: "This is a CT automated test for study description text"
+Diagnosis:
+ Codes:
+  Diagnosis: "20010"
+ Free Text:
+  Free Text: "This is CT automation test for Diagnosis free text"
+Procedure:
+ Codes:
+  Procedure: "0016070"
+ Free Text:
+  Free Text: "This is CT automation test for Procedure free text"
+Lesion location:
+ Lesion location:
+  Laterality: "Left;Right;Free text"
+  Free text: "Site free text"
+  Location: "lesion location text"
+Lesion characteristic:
+ Lesion characteristic:
+  Height: "2"
+  Width: "3"
+  Depth: "4"
+  Echogenicity: "Hyperechoic;Isoechoic;Anechoic;Hypoechoic;Mixed echogenicity;Septated;Coarse calcification;Fine Calcifications;Other"
+  Other Echogenicity: "other echogenicity text"
+  Lesion Margin: "Well Circumscribed;Partially Circumscribed;Irregular;Other"
+  Other Lesion Margin: "other lesion margin text"
+  Post acoustic shadowing: "Select"
+  Post acoustic enhancement: "Select"
+  Edge shadowing: "Select"
+  Compressible: "Select"
+  Fremitus effect: "fills in completely;does not fill in;partially fills in"
+  Effect on surrounding parenchyma: "disrupts normal lines;fits within normal lines;radializes surrounding tissue planes"
+  Other: "other imaging artifacts"
+  Orientation: "Horizontal;Vertical"
+  Fremitus: "Positive;Negative"
+  Blood Flow: "Positive;Negative"
+  Internal flow present: "Select"
+  No internal flow: "Select"
+  No peripheral flow: "Select"
+Physical Exam:
+ Physical Exam:
+  Cannot palpate: "Select"
+  "Dominant mass, irregular": "Select"
+  "Dominant mass, smooth": "Select"
+  Thickened: "Select"
+  Scar tissue: "Select"
+  Skin retraction: "Select"
+  "Red skin/peau d'orange": "Select"
+  "Axillary lymph node, enlarged": "Select"
+  "Axillary lymph node, cannot palpate": "Select"
+Intervention:
+ Intervention:
+  Informed consent obtained: "Select"
+  Skin prepped with alcohol: "Select"
+  Anesthetic: "Select"
+ Biopsy Approach:
+  Instrument Approach: "Superior to Inferior;Inferior to Superior;Lateral to Medial;Medial to Lateral"
+  Number of Cores: "2"
+ Device Utilized:
+  Intact: "Select"
+  Fine needle aspiration: "Select"
+  Spring loaded biopsys: "14"
+  Senorx: "Select"
+  ATEC: "Select"
+  Other: "other device utilized"
+ Post Biopsy Image:
+  Confirmation of target: "Lesion sampled but unchanged sonographically;Lesion removed completely;Lesion mostly removed;Other"
+  Other: "other post biopsy image"
+Follow-up Plan:
+ Follow-up Plan:
+  Call pathology results to patient tomorrow: "Select"
+  Benign pathology type: "mammogram;ultrasound report"
+  Benign pathology duration: "2"
+  Benign pathology duration in: "week;month"
+  Benign pathology: ""
+  Malignant pathology: "Select"
+  Other: "Other follow up plan"
+US Findings:
+ Right:
+  Imaging findings: "Right ultrasound imaging findings"
+ Left:
+  Imaging findings: "Left ultrasound imaging findings"
+ Favorites:
+  Findings-General: "This is CT automation test for US Findings favorites tab"
+Conclusions:
+ Conclusions:
+  Conclusions: "This is CT automation test for Conclusions free text"
+ Favorites:
+  Favorites: "This is CT automation test for Conclusion favorites text"
+Phone log:
+ Phone log:
+  Called report to: "John Magnuson"
+  Number called: "9876543210"
+  Time call: ""
+  Called: ""
+  Instructions: "Instructions for patient"
+Copy to:
+ Copy to:
+  Copy to: "This is CT automation test for Copy to free text"

@@ -1,0 +1,15 @@
+database.driverClassName=org.postgresql.Driver
+database.url=jdbc:postgresql://127.0.0.1:5432/template_pacsdb
+database.userName=sono
+database.password=123412341234
+database.schemaNames=public
+dbMaintainer.autoCreateDbMaintainScriptsTable=true
+dbMaintainer.baseline.revision=x.3.8.30
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

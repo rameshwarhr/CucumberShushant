@@ -1,0 +1,56 @@
+Patient profile data:
+ Patient profile data:
+  Examination date: "Exam.date"
+  Patient type: "I/O"
+  Referring physician: "Referred by"
+Study Description:
+ Favorites:
+  Study Description: ""
+Diagnosis:
+ Codes:
+  "20010": "Lymphosarcoma, unspecified site, extranodal and solid organ sites (20010)"
+ Free Text:
+  Free Text: ""
+Procedure:
+ Codes:
+  Procedure: ""
+  "0016070": "Bypass Cerebral Ventricle to Nasopharynx with Autologous Tissue Substitute, Open Approach (0016070)"
+ Free Text:
+  Free Text: ""
+Lesion characteristic:
+ Lesion characteristic:
+  Echogenicity: "Echo pattern"
+  Mixed echogenicity: "Complex"
+  Fine calcifications: "Fine pleomorphic calcification"
+  Lesion Margin: "Margins"
+  Well Circumscribed: "Circumscribed lesion"
+  Effect on surrounding parenchyma: "Effect on surrounding"
+  Internal flow present: "There is internal flow present"
+  No internal flow: "There is no internal flow"
+  No peripheral flow: "There is no peripheral flow"
+  Other: ""
+Intervention:
+ Intervention:
+  Anesthetic: "Anesthetic - 1% Lidocaine"
+ Device Utilized:
+  Other: ""
+  Spring loaded biopsys: ""
+ Post Biopsy Image:
+  Other: ""
+Follow-up Plan:
+ Follow-up Plan:
+  Benign pathology: ""
+  Malignant pathology: "Benign pathology, follow up here with malignant pathology, return in 1-2 weeks for counseling and care plan development in 1 week(s)"
+  Other: ""
+US Findings:
+ Right:
+  Imaging findings: "Ultrasound Findings - Right"
+ Left:
+  Imaging findings: "Ultrasound Findings - Left"
+ Favorites:
+  Favorites: "Findings-General"
+Conclusions:
+ Conclusions:
+  Conclusions: "Impression"
+ Favorites:
+  Favorites: ""

@@ -1,0 +1,142 @@
+Patient profile data:
+  Patient profile data:
+    Patient name: ""
+    Examination date: ""
+    Patient type: "Outpatient;Inpatient"
+    Age: ""
+    Sex: ""
+    DOB: ""
+    History: "Cardiac History. Diabetes. Family History. Hypertension. Hyperlipidemia. Kidney Disease. Pulmonary embolism. Smoking. Former smoker. Stroke. TIA. DVT. Patient seen by Physician at VHA"
+    Cardiac Rhythm: "Normal Sinus Rhythm;Atrial Fibrillation;Atrial Flutter;AV Block;Junctional;Pacemaker - A pace;Pacemaker - V pace;Pacemaker - AV pace;Pacemaker - Bi-V pace;Pacemaker - Unknown pace;PACs;PVCs;Sinus Bradycardia;Sinus Tachycardia;SVT;Ventricular arrhythmia"
+    Equipment: ""
+    Chart: ""
+    Referring physician: ""
+Study Description:
+  Favorites:
+    Study Description: "This is a CT automated test for study description text"
+Diagnosis:
+  Codes:
+    Diagnosis: "20010"
+  Free Text:
+    Free Text: "This is CT automation test for Diagnosis free text"
+Procedure:
+  Codes:
+    Procedure: "0016070"
+  Free Text:
+    Free Text: "This is CT automation test for Procedure free text"
+Lesion location:
+  Lesion location:
+    Laterality: "Left;Right"
+    Clockface or region: "1 o'clock;2 o'clock;3 o'clock;4 o'clock;5 o'clock;6 o'clock;7 o'clock;8 o'clock;9 o'clock;10 o'clock;11 o'clock;12 o'clock"
+    Distance from nipple: "2"
+    Distance from skin: "4"
+    Quadrant location: "Upper outer;Upper inner;Lower outer;Lower inner;Subareolar"
+Lesion characteristic:
+  Lesion characteristic:
+    Height: "2"
+    Width: "3"
+    Depth: "4"
+    Echogenicity: "Hyperechoic;Isoechoic;Anechoic;Hypoechoic;Mixed echogenicity;Septated;Coarse calcification;Fine Calcifications;Other"
+    Other Echogenicity: "other echogenicity text"
+    Lesion Margin: "Well Circumscribed;Partially Circumscribed;Irregular;Other"
+    Other Lesion Margin: "other lesion margin text"
+    Post acoustic shadowing: "Select"
+    Post acoustic enhancement: "Select"
+    Edge shadowing: "Select"
+    Compressible: "Select"
+    Fremitus effect: "fills in completely;does not fill in;partially fills in"
+    Effect on surrounding parenchyma: "disrupts normal lines;fits within normal lines;radializes surrounding tissue planes"
+    Other: "other imaging artifacts"
+    Orientation: "Horizontal;Vertical"
+    Fremitus: "Positive;Negative"
+    Blood Flow: "Positive;Negative"
+    Internal flow present: "Select"
+    No internal flow: "Select"
+    No peripheral flow: "Select"
+Physical Exam:
+  Physical Exam:
+    Cannot palpate: "Select"
+    "Dominant mass, irregular": "Select"
+    "Dominant mass, smooth": "Select"
+    Thickened: "Select"
+    Scar tissue: "Select"
+    Skin retraction: "Select"
+    "Red skin/peau d'orange": "Select"
+    "Axillary lymph node, enlarged": "Select"
+    "Axillary lymph node, cannot palpate": "Select"
+Intervention:
+  Intervention:
+    Informed consent obtained: "Select"
+    Skin prepped with alcohol: "Select"
+    Anesthetic: "Select"
+  Biopsy Approach:
+    Instrument Approach: "Superior to Inferior;Inferior to Superior;Lateral to Medial;Medial to Lateral"
+    Number of Cores: "2"
+  Device Utilized:
+    Intact: "Select"
+    Fine needle aspiration: "Select"
+    Spring loaded biopsys: "14"
+    Senorx: "Select"
+    ATEC: "Select"
+    Other: "other device utilized"
+  Post Biopsy Image:
+    Confirmation of target: "Lesion sampled but unchanged sonographically;Lesion removed completely;Lesion mostly removed;Other"
+    Other: "other post biopsy image"
+Follow-up Plan:
+  Follow-up Plan:
+    Call pathology results to patient tomorrow: "Select"
+    Benign pathology type: "mammogram;ultrasound report"
+    Benign pathology duration: "2"
+    Benign pathology duration in: "week;month"
+    Benign pathology: ""
+    Malignant pathology: "Select"
+    Other: "Other follow up plan"
+US Results:
+  Right Breast:
+    "Nodule 1: Length": "2"
+    "Nodule 1: AP": "4"
+    "Nodule 1: Trans": "6"
+    "Nodule 1: Depth": "8"
+    "Nodule 1: Distance": "10"
+    "Nodule 1: Echogenicity": "Anechoic;Hyperechoic;Complex;Hypoechoic;Isoechoic"
+    "Nodule 1: Vascular Flow": "Yes;No;NC"
+    "Nodule 1: Biopsy": "Yes;No;NC;Previously"
+    "Nodule 1: Change": "Larger;Slightly larger;Smaller;No change"
+  Left Breast:
+    "Nodule 1: Length": "1"
+    "Nodule 1: AP": "3"
+    "Nodule 1: Trans": "5"
+    "Nodule 1: Depth": "7"
+    "Nodule 1: Distance": "9"
+    "Nodule 1: Echogenicity": "Anechoic;Hyperechoic;Complex;Hypoechoic;Isoechoic"
+    "Nodule 1: Vascular Flow": "Yes;No;NC"
+    "Nodule 1: Biopsy": "Yes;No;NC;Previously"
+    "Nodule 1: Change": "Larger;Slightly larger;Smaller;No change"
+US Findings:
+  Right:
+    Lobe measures: "10 X 12 X 14"
+    Number of nodules: "1"
+    Mid section of largest nodule: "5"
+    Largest nodule measuring: "15"
+  Left:
+    Lobe measures: "11 X 13 X 15"
+    Number of nodules: "2"
+    Mid section of largest nodule: "4"
+    Largest nodule measuring: "12"
+  Favorites:
+    Favorites: "This is CT automation test for US Findings favorites"
+Conclusions:
+  Conclusions:
+    Conclusions: "This is CT automation test for Conclusions free text"
+  Favorites:
+    Favorites: "This is CT automation test for Conclusion favorites text"
+Phone log:
+  Phone log:
+    Called report to: "John Magnuson"
+    Number called: "9876543210"
+    Time call: ""
+    Called: ""
+    Instructions: "Instructions for patient"
+Copy to:
+  Copy to:
+    Copy to: "This is CT automation test for Copy to free text"

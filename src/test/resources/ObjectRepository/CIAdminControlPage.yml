@@ -1,0 +1,7 @@
+adminControlPageHeader_Xpath: "//*[@alt='Hawtio Management Console']"
+sonovisionArchiveFilterLink_Xpath: "//*[text()='sonovision.archive']"
+globalConfigurationServiceLink_Xpath: "(//li[contains(text(),'GlobalConfigurationService')])[3]"
+sessionTimeoutLabel_Xpath: "//*[@title='Session timeout']"
+sessionTimeoutTextbox_Xpath: "//*[text()='Value']//parent::div/div/textarea"
+loadingIcon_Xpath: "//*[contains(@class,'spinner')]"
+updateButton_Xpath: "//*[text()='Update']"
